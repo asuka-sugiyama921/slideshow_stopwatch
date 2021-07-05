@@ -1,0 +1,135 @@
+body{
+  background: rgb(250, 246, 246);
+}
+
+h1,p{
+  width:500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+h1{
+  margin-top: 40px;
+  font-size: 28px;
+  text-align: left;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+
+.under{
+  border-bottom: dotted 3px rgb(252, 68, 197);
+  line-height: 30px;
+}
+/*------------------スライドショー------------------*/
+main {
+  width: 300px;
+  margin: 40px auto 80px auto;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+nav {
+  margin-bottom: 8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  border: 2px solid rgb(179, 177, 177);
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav li:hover {
+  background: #757776;
+  color: azure;
+}
+
+#play {
+  width: 140px;
+}
+
+#next,
+#prev {
+  width: 60px;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+.thumbnails li {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.thumbnails li:hover,
+.thumbnails li.current {
+  opacity: 1;
+}
+
+.thumbnails img {
+  width: 56px;
+}
+
+/*------------------ストップウォッチ------------------*/
+.container{
+  margin: 40px auto 80px auto;
+  width: 270px;
+  background: rgb(226, 226, 224);
+  padding: 13px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+#timer{
+  background: rgb(179, 247, 247);
+  height: 120px; 
+  line-height: 120px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  background: rgb(241, 252, 144);
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;/*chrome意外だと別の設定が必要な場合もある*/
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;/*間に余白を開けたい時*/
+}
+
+.inactive{
+  opacity: 0.6;
+}

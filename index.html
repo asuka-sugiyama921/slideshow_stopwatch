@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Slideshow,Stopwatch</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <h1>スライドショー</h1>
+  <p><span class="under">「Play」ボタンを押すと自動でスライドショーが展開されます。</br>
+  「Pause」ボタンで停止し、矢印ボタンは自動でスライドショーを動かせます。</span></p>
+  <main>
+    <img id="main">
+    <nav>
+      <ul>
+        <li id="play">Play</li>
+        <li id="prev">&lt;</li>
+        <li id="next">&gt;</li>
+      </ul>
+    </nav>
+    <ul class="thumbnails"></ul>
+  </main>
+
+  <h1>ストップウォッチ</h1>
+  <p><span class="under">「Start」ボタンで開始、「Stop」ボタンで停止されます。「Reset」ボタンは0に戻ります。</span></p>
+  <div class="container">
+    <div id="timer">00:00.000</div>
+    <div class="controls">
+      <div class="btn"id="start">Start</div>
+      <div class="btn"id="stop">Stop</div>
+      <div class="btn"id="reset">Reset</div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
